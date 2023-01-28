@@ -1,0 +1,3 @@
+cd C:\alpha-machine\src\drl-pf-fx-sb3
+Ipython nbconvert train-multiprocessing-1 --to script
+Ipython nbconvert tune-1 --to script

@@ -1,0 +1,6 @@
+https://www.wpxbox.com/how-to-find-the-largest-files-on-windows/
+https://convertlive.com/u/convert/gigabytes/to/bytes#100
+
+find files larger than 100 gb
+
+forfiles /S /M * /C “cmd /c if @fsize GEQ 107374182400 echo @path > largefiles.txt

@@ -1,0 +1,17 @@
+{
+  "action_noise": "NormalActionNoise",
+  "batch_size": 256,
+  "buffer_size": 100000,
+  "compute_indicators": "all",
+  "gamma": 0.9,
+  "learning_rate": 0.00028666242910292797,
+  "learning_starts": 10,
+  "lookback": 18.0,
+  "net_arch": "xlarge",
+  "reward_penalty": "none",
+  "spread": 5.0,
+  "tau": 0.005,
+  "total_timestamp": 20000.0,
+  "train_freq": 32,
+  "use_sde": 1.0
+}

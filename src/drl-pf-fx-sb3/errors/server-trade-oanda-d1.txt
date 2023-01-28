@@ -1,0 +1,156 @@
+BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (1) - OrderId: 1 (BrokerId: ) New Market order for 105 units of EURUSD  Status: Unprocessed
+20210225 05:00:03.191 Trace:: Total margin information: TotalMarginUsed: 328.86, MarginRemaining: 559.39
+20210225 05:00:03.193 Trace:: Order request margin information: MarginUsed: 46.98, MarginRemaining: 653.34
+20210225 05:00:03.354 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 1 EventID: 1 Symbol: EURUSD Status: Submitted Quantity: 105 BrokerId: 88
+20210225 05:00:03.375 Trace:: BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (2) - OrderId: 2 (BrokerId: ) New Market order for -121 units of USDJPY  Status: Unprocessed
+20210225 05:00:03.375 Trace:: Total margin information: TotalMarginUsed: 326.30, MarginRemaining: 561.95
+20210225 05:00:03.375 Trace:: Order request margin information: MarginUsed: 46.86, MarginRemaining: 655.66
+20210225 05:00:03.376 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 1 EventID: 2 Symbol: EURUSD Status: Filled Quantity: 105 FillQuantity: 105 FillPrice: 1.21772 USD Message: Oanda Fill Event BrokerId: 88
+20210225 05:00:03.380 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 1 EventID: 1 Symbol: EURUSD Status: Submitted Quantity: 105
+20210225 05:00:03.380 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 1 EventID: 2 Symbol: EURUSD Status: Filled Quantity: 105 FillQuantity: 105 FillPrice: 1.21772 USD Message: Oanda Fill Event
+20210225 05:00:03.446 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 2 EventID: 1 Symbol: USDJPY Status: Submitted Quantity: -121 BrokerId: 90
+20210225 05:00:03.447 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 2 EventID: 2 Symbol: USDJPY Status: Filled Quantity: -121 FillQuantity: -121 FillPrice: 105.882 JPY Message: Oanda Fill Event BrokerId: 90
+20210225 05:00:03.447 Trace:: BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (3) - OrderId: 3 (BrokerId: ) New Market order for -117 units of GBPUSD  Status: Unprocessed
+20210225 05:00:03.447 Trace:: Total margin information: TotalMarginUsed: 323.88, MarginRemaining: 564.35
+20210225 05:00:03.447 Trace:: Order request margin information: MarginUsed: 46.81, MarginRemaining: 657.98
+20210225 05:00:03.480 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 2 EventID: 1 Symbol: USDJPY Status: Submitted Quantity: -121
+20210225 05:00:03.481 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 2 EventID: 2 Symbol: USDJPY Status: Filled Quantity: -121 FillQuantity: -121 FillPrice: 105.882 JPY Message: Oanda Fill Event
+20210225 05:00:03.484 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 3 EventID: 1 Symbol: GBPUSD Status: Submitted Quantity: -117 BrokerId: 92
+20210225 05:00:03.485 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 3 EventID: 2 Symbol: GBPUSD Status: Filled Quantity: -117 FillQuantity: -117 FillPrice: 1.41592 USD Message: Oanda Fill Event BrokerId: 92
+20210225 05:00:03.485 Trace:: BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (4) - OrderId: 4 (BrokerId: ) New Market order for 175 units of AUDUSD  Status: Unprocessed
+20210225 05:00:03.485 Trace:: Total margin information: TotalMarginUsed: 320.56, MarginRemaining: 567.65
+20210225 05:00:03.485 Trace:: Order request margin information: MarginUsed: 47.21, MarginRemaining: 662.06
+20210225 05:00:03.522 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 4 EventID: 1 Symbol: AUDUSD Status: Submitted Quantity: 175 BrokerId: 94
+20210225 05:00:03.522 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 4 EventID: 2 Symbol: AUDUSD Status: Filled Quantity: 175 FillQuantity: 175 FillPrice: 0.79669 USD Message: Oanda Fill Event BrokerId: 94
+20210225 05:00:03.523 Trace:: BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (5) - OrderId: 5 (BrokerId: ) New Market order for -122 units of USDCAD  Status: Unprocessed
+20210225 05:00:03.523 Trace:: Total margin information: TotalMarginUsed: 317.78, MarginRemaining: 570.43
+20210225 05:00:03.523 Trace:: Order request margin information: MarginUsed: 46.86, MarginRemaining: 664.14
+20210225 05:00:03.558 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 5 EventID: 1 Symbol: USDCAD Status: Submitted Quantity: -122 BrokerId: 96
+20210225 05:00:03.559 Trace:: BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (6) - OrderId: 6 (BrokerId: ) New Market order for 121 units of USDCHF  Status: Unprocessed
+20210225 05:00:03.559 Trace:: Total margin information: TotalMarginUsed: 315.34, MarginRemaining: 572.85
+20210225 05:00:03.559 Trace:: Order request margin information: MarginUsed: 46.84, MarginRemaining: 666.52
+20210225 05:00:03.559 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 5 EventID: 2 Symbol: USDCAD Status: Filled Quantity: -122 FillQuantity: -122 FillPrice: 1.25034 CAD Message: Oanda Fill Event BrokerId: 96
+20210225 05:00:03.581 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 3 EventID: 1 Symbol: GBPUSD Status: Submitted Quantity: -117
+20210225 05:00:03.581 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 3 EventID: 2 Symbol: GBPUSD Status: Filled Quantity: -117 FillQuantity: -117 FillPrice: 1.41592 USD Message: Oanda Fill Event
+20210225 05:00:03.581 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 4 EventID: 1 Symbol: AUDUSD Status: Submitted Quantity: 175
+20210225 05:00:03.581 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 4 EventID: 2 Symbol: AUDUSD Status: Filled Quantity: 175 FillQuantity: 175 FillPrice: 0.79669 USD Message: Oanda Fill Event
+20210225 05:00:03.581 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 5 EventID: 1 Symbol: USDCAD Status: Submitted Quantity: -122
+20210225 05:00:03.581 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 5 EventID: 2 Symbol: USDCAD Status: Filled Quantity: -122 FillQuantity: -122 FillPrice: 1.25034 CAD Message: Oanda Fill Event
+20210225 05:00:03.596 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 6 EventID: 1 Symbol: USDCHF Status: Submitted Quantity: 121 BrokerId: 98
+20210225 05:00:03.597 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 6 EventID: 2 Symbol: USDCHF Status: Filled Quantity: 121 FillQuantity: 121 FillPrice: 0.90617 CHF Message: Oanda Fill Event BrokerId: 98
+20210225 05:00:03.597 Trace:: BrokerageTransactionHandler.Process(): 02/25/2021 05:00:00 UTC: Submit Order: (7) - OrderId: 7 (BrokerId: ) New Market order for 194 units of NZDUSD  Status: Unprocessed
+20210225 05:00:03.597 Trace:: Total margin information: TotalMarginUsed: 312.92, MarginRemaining: 575.27
+20210225 05:00:03.597 Trace:: Order request margin information: MarginUsed: 47.31, MarginRemaining: 669.89
+20210225 05:00:03.646 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 7 EventID: 1 Symbol: NZDUSD Status: Submitted Quantity: 194 BrokerId: 100
+20210225 05:00:03.646 Trace:: LiveTradingResultHandler.OrderEvent(): Time: 02/25/2021 05:00:03 OrderID: 7 EventID: 2 Symbol: NZDUSD Status: Filled Quantity: 194 FillQuantity: 194 FillPrice: 0.74326 USD Message: Oanda Fill Event BrokerId: 100
+20210225 05:00:03.681 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 6 EventID: 1 Symbol: USDCHF Status: Submitted Quantity: 121
+20210225 05:00:03.681 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 6 EventID: 2 Symbol: USDCHF Status: Filled Quantity: 121 FillQuantity: 121 FillPrice: 0.90617 CHF Message: Oanda Fill Event
+20210225 05:00:03.681 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 7 EventID: 1 Symbol: NZDUSD Status: Submitted Quantity: 194
+20210225 05:00:03.681 Trace:: Debug: New Order Event: Time: 02/25/2021 05:00:03 OrderID: 7 EventID: 2 Symbol: NZDUSD Status: Filled Quantity: 194 FillQuantity: 194 FillPrice: 0.74326 USD Message: Oanda Fill Event
+20210225 05:00:11.630 ERROR:: AlgorithmManager.Run(): RuntimeError: Slice: Python.Runtime.PythonException: NameError : name 'self' is not defined
+  at Python.Runtime.PyObject.Invoke (Python.Runtime.PyTuple args, Python.Runtime.PyDict kw) [0x00033] in <c56ab175820d412caf052e079c2ab9ef>:0
+  at Python.Runtime.PyObject.TryInvoke (System.Dynamic.InvokeBinder binder, System.Object[] args, System.Object& result) [0x0001d] in <c56ab175820d412caf052e079c2ab9ef>:0
+  at (wrapper dynamic-method) System.Object.CallSite.Target(System.Runtime.CompilerServices.Closure,System.Runtime.CompilerServices.CallSite,object,QuantConnect.Python.PythonSlice)
+  at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1] (System.Runtime.CompilerServices.CallSite site, T0 arg0, T1 arg1) [0x00105] in <92922d9bda2f4e1cba9242d052be6d43>:0
+  at QuantConnect.AlgorithmFactory.Python.Wrappers.AlgorithmPythonWrapper.OnData (QuantConnect.Data.Slice slice) [0x0010c] in <e473e9a84ed24d5a84f94045d092f552>:0
+  at QuantConnect.Lean.Engine.AlgorithmManager.Run (QuantConnect.Packets.AlgorithmNodePacket job, QuantConnect.Interfaces.IAlgorithm algorithm, QuantConnect.Lean.Engine.DataFeeds.ISynchronizer synchronizer, QuantConnect.Lean.Engine.TransactionHandlers.ITransactionHandler transactions, QuantConnect.Lean.Engine.Results.IResultHandler results, QuantConnect.Lean.Engine.RealTime.IRealTimeHandler realtime, QuantConnect.Lean.Engine.Server.ILeanManager leanManager, QuantConnect.Lean.Engine.Alpha.IAlphaHandler alphas, System.Threading.CancellationToken token) [0x0134e] in <cedb170b00c04c6ba23af7500694592a>:0
+20210225 05:00:11.630 Trace:: Engine.Run(): Exiting Algorithm Manager
+20210225 05:00:11.769 ERROR:: Engine.HandleAlgorithmError(): Breaking out of parent try catch: Python.Runtime.PythonException: NameError : name 'self' is not defined
+  at Python.Runtime.PyObject.Invoke (Python.Runtime.PyTuple args, Python.Runtime.PyDict kw) [0x00033] in <c56ab175820d412caf052e079c2ab9ef>:0
+  at Python.Runtime.PyObject.TryInvoke (System.Dynamic.InvokeBinder binder, System.Object[] args, System.Object& result) [0x0001d] in <c56ab175820d412caf052e079c2ab9ef>:0
+  at (wrapper dynamic-method) System.Object.CallSite.Target(System.Runtime.CompilerServices.Closure,System.Runtime.CompilerServices.CallSite,object,QuantConnect.Python.PythonSlice)
+  at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1] (System.Runtime.CompilerServices.CallSite site, T0 arg0, T1 arg1) [0x00105] in <92922d9bda2f4e1cba9242d052be6d43>:0
+  at QuantConnect.AlgorithmFactory.Python.Wrappers.AlgorithmPythonWrapper.OnData (QuantConnect.Data.Slice slice) [0x0010c] in <e473e9a84ed24d5a84f94045d092f552>:0
+  at QuantConnect.Lean.Engine.AlgorithmManager.Run (QuantConnect.Packets.AlgorithmNodePacket job, QuantConnect.Interfaces.IAlgorithm algorithm, QuantConnect.Lean.Engine.DataFeeds.ISynchronizer synchronizer, QuantConnect.Lean.Engine.TransactionHandlers.ITransactionHandler transactions, QuantConnect.Lean.Engine.Results.IResultHandler results, QuantConnect.Lean.Engine.RealTime.IRealTimeHandler realtime, QuantConnect.Lean.Engine.Server.ILeanManager leanManager, QuantConnect.Lean.Engine.Alpha.IAlphaHandler alphas, System.Threading.CancellationToken token) [0x0134e] in <cedb170b00c04c6ba23af7500694592a>:0
+20210225 05:00:11.770 Trace:: LiveTradingDataFeed.Exit(): Start. Setting cancellation token...
+20210225 05:00:11.770 Trace:: BaseDataExchange(CustomDataExchange) Stopping...
+20210225 05:00:11.770 Trace:: LiveTradingDataFeed.Exit(): Exit Finished.
+20210225 05:00:11.771 Trace:: BaseDataExchange(CustomDataExchange).ConsumeQueue(): Cancellation requested.  Exiting...
+20210225 05:00:12.233 Trace:: Engine.Run(): Sending runtime error to user...
+20210225 05:00:12.237 Trace:: StopSafely(): waiting for 'RealTime Thread' thread to stop...
+20210225 05:00:12.237 Trace:: BrokerageTransactionHandler.Run(): Thread has been aborted
+20210225 05:00:12.312 Trace:: Log: Runtime Error: NameError : name 'self' is not defined
+  at OnData in trade-oanda-d1.py:line 117 :: self.rebalance()
+  at rebalance in trade-oanda-d1.py:line 239
+  at rebalance_fxcm in trade_lib/rebalance_fxcm.py:line 94 :: current_margins_per_lot = calculate_margin_in_account_currency(current_prices)
+  at calculate_margin_in_account_currency in trade_lib/rebalance_fxcm.py:line 38 :: for instrument in self.instruments:
+ NameError : name 'self' is not defined
+20210225 05:00:12.313 ERROR:: Runtime Error: NameError : name 'self' is not defined
+  at OnData in trade-oanda-d1.py:line 117 :: self.rebalance()
+  at rebalance in trade-oanda-d1.py:line 239
+  at rebalance_fxcm in trade_lib/rebalance_fxcm.py:line 94 :: current_margins_per_lot = calculate_margin_in_account_currency(current_prices)
+  at calculate_margin_in_account_currency in trade_lib/rebalance_fxcm.py:line 38 :: for instrument in self.instruments:
+ NameError : name 'self' is not defined
+ System.Exception: NameError : name 'self' is not defined
+  at OnData in trade-oanda-d1.py:line 117 :: self.rebalance()
+  at rebalance in trade-oanda-d1.py:line 239
+  at rebalance_fxcm in trade_lib/rebalance_fxcm.py:line 94 :: current_margins_per_lot = calculate_margin_in_account_currency(current_prices)
+  at calculate_margin_in_account_currency in trade_lib/rebalance_fxcm.py:line 38 :: for instrument in self.instruments:
+ ---> Python.Runtime.PythonException: NameError : name 'self' is not defined
+  at Python.Runtime.PyObject.Invoke (Python.Runtime.PyTuple args, Python.Runtime.PyDict kw) [0x00033] in <c56ab175820d412caf052e079c2ab9ef>:0
+  at Python.Runtime.PyObject.TryInvoke (System.Dynamic.InvokeBinder binder, System.Object[] args, System.Object& result) [0x0001d] in <c56ab175820d412caf052e079c2ab9ef>:0
+  at (wrapper dynamic-method) System.Object.CallSite.Target(System.Runtime.CompilerServices.Closure,System.Runtime.CompilerServices.CallSite,object,QuantConnect.Python.PythonSlice)
+  at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid2[T0,T1] (System.Runtime.CompilerServices.CallSite site, T0 arg0, T1 arg1) [0x00105] in <92922d9bda2f4e1cba9242d052be6d43>:0
+  at QuantConnect.AlgorithmFactory.Python.Wrappers.AlgorithmPythonWrapper.OnData (QuantConnect.Data.Slice slice) [0x0010c] in <e473e9a84ed24d5a84f94045d092f552>:0
+  at QuantConnect.Lean.Engine.AlgorithmManager.Run (QuantConnect.Packets.AlgorithmNodePacket job, QuantConnect.Interfaces.IAlgorithm algorithm, QuantConnect.Lean.Engine.DataFeeds.ISynchronizer synchronizer, QuantConnect.Lean.Engine.TransactionHandlers.ITransactionHandler transactions, QuantConnect.Lean.Engine.Results.IResultHandler results, QuantConnect.Lean.Engine.RealTime.IRealTimeHandler realtime, QuantConnect.Lean.Engine.Server.ILeanManager leanManager, QuantConnect.Lean.Engine.Alpha.IAlphaHandler alphas, System.Threading.CancellationToken token) [0x0134e] in <cedb170b00c04c6ba23af7500694592a>:0
+   --- End of inner exception stack trace ---
+20210225 05:00:12.999 Trace:: LiveTradingRealTimeHandler.Run(): Exiting thread... Exit triggered: True
+20210225 05:00:13.002 Trace:: DataManager.RemoveSubscription(): Removed AUDUSD,AUDUSD,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.002 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): AUDUSD
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed AUDUSD,AUDUSD,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed EURUSD,EURUSD,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.003 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): EURUSD
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed EURUSD,EURUSD,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed GBPUSD,GBPUSD,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.003 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): GBPUSD
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed GBPUSD,GBPUSD,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed NZDUSD,NZDUSD,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.003 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): NZDUSD
+20210225 05:00:13.003 Trace:: DataManager.RemoveSubscription(): Removed NZDUSD,NZDUSD,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed QC-UNIVERSE-USERDEFINED-OANDA-FOREX,QC-UNIVERSE-USERDEFINED-OANDA-FOREX,Daily,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed USDCAD,USDCAD,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.005 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): USDCAD
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed USDCAD,USDCAD,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed USDCHF,USDCHF,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.005 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): USDCHF
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed USDCHF,USDCHF,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed USDJPY,USDJPY,Daily,QuoteBar,Quote,Adjusted
+20210225 05:00:13.005 Trace:: EventBasedDataQueueHandlerSubscriptionManager.Unsubscribe(): USDJPY
+20210225 05:00:13.005 Trace:: DataManager.RemoveSubscription(): Removed USDJPY,USDJPY,Minute,QuoteBar,Quote,Adjusted,Internal
+20210225 05:00:13.006 Trace:: DefaultAlphaHandler.Exit(): Exiting...
+20210225 05:00:13.006 Trace:: DefaultAlphaHandler.Exit(): Ended
+20210225 05:00:13.007 Trace:: StopSafely(): waiting for 'Result Thread' thread to stop...
+20210225 05:00:13.013 Trace:: Debug: QuoteBarData
+QuoteBarData
+QuoteBarData
+QuoteBarData
+QuoteBarData
+QuoteBarData
+QuoteBarData
+Running model...
+================
+2021-02-25 00:00:00.001230
+2021-02-25 05:00:00.001230+00:00
+Date:2021-02-25
+['EURUSD', 'USDJPY', 'GBPUSD', 'AUDUSD', 'USDCAD', 'USDCHF', 'NZDUSD']
+Suggested weights: [-0.12532876  0.12532876  0.12269875 -0.12532876  0.12532876 -0.12532867
+ -0.12532876  0.12532876]
+Before rebalance:888.2437015810572
+20210225 05:00:13.114 Trace:: LiveTradingResultHandler.Run(): Ending Thread...
+20210225 05:00:13.115 Trace:: LiveTradingResultHandler.SendFinalResult(): Starting...
+20210225 05:00:13.216 Trace:: LiveTradingResultHandler.SendFinalResult(): Finished storing results. Start sending...
+20210225 05:00:13.216 Trace:: LiveTradingResultHandler.SendFinalResult(): Ended
+20210225 05:00:13.217 Trace:: Engine.Run(): Disconnecting from brokerage...
+20210225 05:00:14.179 Trace:: Engine.Run(): Disposing of setup handler...
+20210225 05:00:14.180 Trace:: BrokerageSetupHandler.Setup(): Found data queue handler to dispose: QuantConnect.Brokerages.Oanda.OandaBrokerage
+20210225 05:00:14.180 Trace:: Engine.Main(): Analysis Completed and Results Posted.
+Engine.Main(): Analysis Complete.
+20210225 05:00:14.180 Trace:: Config.GetValue(): close-automatically - Using default value: False
+Engine.Main(): Press any key to continue.
+20210225 05:00:14.181 Trace:: Engine.Main(): Packet removed from queue: trade-oanda-d1
+20210225 05:00:14.181 Trace:: LeanEngineSystemHandlers.Dispose(): start...
+20210225 05:00:14.181 Trace:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+20210225 05:00:14.181 Trace:: LeanEngineAlgorithmHandlers.Dispose(): start...
+20210225 05:00:14.181 Trace:: BrokerageSetupHandler.Setup(): Found data queue handler to dispose: QuantConnect.Brokerages.Oanda.OandaBrokerage
+20210225 05:00:14.182 Trace:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.
+20210225 05:00:14.182 Trace:: Program.Main(): Exiting Lean...

@@ -1,0 +1,18 @@
+{
+  "best_params": {
+    "action_noise": "NormalActionNoise",
+    "batch_size": 1024,
+    "buffer_size": 100000,
+    "compute_indicators": "all",
+    "gamma": 0.95,
+    "learning_rate": 0.0003346307436731413,
+    "learning_starts": 0,
+    "lookback": 20,
+    "net_arch": "default",
+    "spread": 5.0,
+    "tau": 0.05,
+    "total_timestamp": 20000.0,
+    "train_freq": 512
+  },
+  "best_value": 0.0
+}

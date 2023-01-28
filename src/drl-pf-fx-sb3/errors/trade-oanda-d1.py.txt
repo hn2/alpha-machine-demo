@@ -1,0 +1,337 @@
+from clr import AddReference
+
+AddReference("System")
+AddReference("QuantConnect.Algorithm")
+AddReference("QuantConnect.Indicators")
+AddReference("QuantConnect.Common")
+
+from System import *
+from QuantConnect import *
+from QuantConnect.Data import *
+from QuantConnect.Algorithm import *
+from QuantConnect.Indicators import *
+from QuantConnect.Brokerages import *
+from QuantConnect.Data.Consolidators import *
+from QuantConnect.Scheduling import *
+
+import numpy as np
+import json
+import os
+import gym
+import multiprocessing
+from os.path import join as path_join
+from utils_lib.my_forex_instruments import my_forex_instruments
+from utils_lib.my_globals import MODELS_DIR, DROPBOX_ACCESS_TOKEN, DROPBOX_DIR, DROPBOX_REMOTE_DIR, FXCM_ACCESS_TOKEN
+from utils_lib.helpers import upload_to_dropbox
+from trade_lib.rebalance_fxcm import rebalance_fxcm
+from collections import deque
+from datetime import timedelta
+from stable_baselines3 import SAC, TD3
+from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
+
+#   cd util_lib
+#   python -m tensorboard.main --logdir=.
+#   tensorboard --logdir=.
+
+DELIMITER = '-'
+ENV_VERBOSE = True
+
+MODEL_NAME = 'fx-7-50000-2000-45-5-oanda-day-on_algo.td3-comp_pos.long_and_short-comp_ind.all-comp_rew.[log_returns]-e49f4c56'
+
+
+class main(QCAlgorithm):
+
+    def Initialize(self):
+
+        self.model_name = MODEL_NAME
+
+        self.instruments, self.pip_size, self.pip_spread, self.market, self.resolution, self.env_lookback_period, self.online_algorithm, self.compute_position, self.compute_indicators, self.compute_reward = self.parse_model_name(
+            self.model_name)
+
+        self.Debug(self.instruments)
+        self.Debug(self.pip_size)
+        self.Debug(self.pip_spread)
+        self.Debug(self.market)
+        self.Debug(self.resolution)
+        self.Debug(self.env_lookback_period)
+        self.Debug(self.online_algorithm)
+        self.Debug(self.compute_position)
+        self.Debug(self.compute_indicators)
+        self.Debug(self.compute_reward)
+
+        self.symbols = [self.AddForex(instrument, self.resolution, Market.Oanda).Symbol for instrument in
+                        self.instruments]
+        self.SetBrokerageModel(BrokerageName.FxcmBrokerage)
+        #   self.symbols = [self.AddForex(instrument, self.resolution, Market.Oanda).Symbol for instrument in self.instruments]#   self.SetBrokerageModel(BrokerageName.OandaBrokerage)
+        #   self.symbols = [self.AddForex(instrument, self.resolution, Market.FXCM).Symbol for instrument in self.instruments]
+        #   self.SetBrokerageModel(BrokerageName.FxcmBrokerage)
+
+        self.SetStartDate(2020, 8, 4)
+        self.SetEndDate(2021, 2, 21)
+
+        self.Debug("--------------")
+        self.Debug(self.instruments)
+        self.Debug(multiprocessing.get_all_start_methods())
+        self.Debug(multiprocessing.cpu_count())
+        self.Debug("--------------")
+
+        self.lot_size = 'Standard'
+        self.leverage = 20.0
+        self.max_slippage_percent = 1e-2
+
+        self.cash = 1e3
+        self.SetCash(self.cash)
+
+        self.trade_lookback_period = self.env_lookback_period + 100
+
+        self.Debug(self.env_lookback_period)
+        self.Debug(self.trade_lookback_period)
+
+        '''
+        now = datetime.now()
+        self.SetStartDate(2020, 8, 4)
+        self.SetEndDate(2021, 2, 21)
+        '''
+
+        # online model
+        self.online_model = None
+        self.deterministic = True
+        self.verbose = 1
+
+        self.rollingwindow = {}
+        symbols = self.Securities.Keys
+        history = self.History(symbols, self.trade_lookback_period, self.resolution)
+        for symbol in symbols:
+            self.rollingwindow[symbol] = QuoteBarData(self, symbol, self.trade_lookback_period, history.loc[symbol],
+                                                      self.resolution)
+
+    def OnData(self, data):
+
+        '''
+        for key in data.Keys:
+            self.Log(str(key.Value) + ": " + str(data.Time) + " > " + str(data[key].Value))
+        '''
+        for _, QuoteBarData in self.rollingwindow.items():
+            self.Debug("QuoteBarData")
+
+        self.rebalance()
+
+    def get_model_params(self, env_params_file_name, model_params_file_name):
+
+        '''
+        with open(model_params_file_name) as f:
+            params = json.load(f)
+
+        env_params_str = str(params["env_params"])
+        model_params_str = str(params["model_params"])
+
+        self.Debug(env_params_str)
+        self.Debug(env_params_str)
+
+        env_params_dict = json.loads(env_params_str)
+        model_params_dict = json.loads(model_params_str)
+        '''
+
+        #   params = eval(json.load(open(model_params_file_name)))
+
+        with open(env_params_file_name, 'rb') as f:
+            env_params = json.load(f)
+
+        with open(model_params_file_name, 'rb') as f:
+            model_params = json.load(f)
+
+        return env_params, model_params
+
+    def get_online_class(self, online_algorithm):
+
+        if online_algorithm == 'sac':
+            online_class = SAC
+        elif online_algorithm == 'td3':
+            online_class = TD3
+
+        return online_class
+
+    def rebalance(self):
+
+        for symbol, QuoteBarData in self.rollingwindow.items():
+
+            open = np.asarray(QuoteBarData.open)
+            if open.shape[0] < self.trade_lookback_period:
+                return
+
+        self.Debug('Running model...')
+
+        data = self.prepare_data_trade()
+
+        v_env = gym.make('gym_fx:FxEnv-v0',
+                         data=data,
+                         instruments=self.instruments,
+                         lookback=self.env_lookback_period,
+                         random_episode_start=True,
+                         cash=self.cash,
+                         max_slippage_percent=self.max_slippage_percent,
+                         lot_size=self.lot_size,
+                         leverage=self.leverage,
+                         pip_size=self.pip_size,
+                         pip_spread=self.pip_spread,
+                         compute_position=self.compute_position,
+                         compute_indicators=self.compute_indicators,
+                         compute_reward=self.compute_reward,  # returns log_returns
+                         verbose=ENV_VERBOSE)
+
+        #   check_env(v_env)
+
+        v_model_dir = path_join(MODELS_DIR, self.model_name)
+
+        v_online_dir = path_join(v_model_dir, 'online')
+        v_online_model_dir = path_join(v_online_dir, self.online_algorithm.lower())
+        v_online_model_file_name = path_join(v_online_model_dir, 'model')
+        v_online_model_file_name_stats = path_join(v_online_model_dir, 'stats.pkl')
+
+        v_dummy_vec_env = DummyVecEnv([lambda: v_env])
+        v_vec_normalize = VecNormalize.load(v_online_model_file_name_stats, v_dummy_vec_env)
+        v_vec_normalize.training = False
+        v_vec_normalize.norm_reward = False
+
+        online_class = self.get_online_class(self.online_algorithm)
+        online_model = online_class.load(v_online_model_file_name)
+
+        online_model_parama = online_model.get_parameters()
+
+        # for item in online_model_parama.items():
+        #     self.Debug(f'{item.key}={item.value}')
+
+        # self.Debug("Model Parameters")
+        # signature = inspect.signature(self.online_model.__init__)
+        # for param in signature.parameters.values():
+        #     self.Debug(param)
+
+        obs = v_vec_normalize.reset()
+
+        done = False
+
+        while not done:
+            action, _states = online_model.predict(obs, deterministic=self.deterministic)
+            obs, _, done, _ = v_vec_normalize.step(action)
+            suggested_weights = v_vec_normalize.get_attr('last_suggested_weights')[0]
+
+        self.Debug("================")
+        self.Debug(self.Time)
+        self.Debug(self.UtcTime)
+        self.Debug(f"Date:{self.Time.date()}")
+        self.Debug(self.instruments)
+        self.Debug(f'Suggested weights: {suggested_weights}')
+        self.Debug(f"Before rebalance:{self.Portfolio.TotalPortfolioValue}")
+
+        for i, instrument in enumerate(self.instruments):
+            self.SetHoldings(instrument, self.leverage * suggested_weights[i])
+
+        #   oanda_instruments = [instrument[:3] + '_' + instrument[3:] for instrument in self.instruments]
+        fxcm_instruments = [instrument[:3] + '/' + instrument[3:] for instrument in self.instruments]
+
+        try:
+            upload_to_dropbox(DROPBOX_ACCESS_TOKEN, 'oanda-weights.csv', DROPBOX_DIR, DROPBOX_REMOTE_DIR,
+                              suggested_weights)
+        except Exception as e:
+            self.Debug(e)
+
+        try:
+            rebalance_fxcm(FXCM_ACCESS_TOKEN, fxcm_instruments, suggested_weights)
+        except Exception as e:
+            self.Debug(e)
+
+        self.Debug(f"After rebalance:{self.Portfolio.TotalPortfolioValue}")
+        self.Debug("================")
+
+    def prepare_data_trade(self):
+
+        data = np.empty(shape=(len(self.instruments), 0, 4), dtype=np.float)
+
+        i = 0
+
+        for instrument in self.instruments:
+            history = self.History(self.Symbol(instrument), self.trade_lookback_period, self.resolution)
+
+            df_data = history[['open', 'high', 'low', 'close']]
+            np_data = np.array(df_data)
+
+            data = np.resize(data, (data.shape[0], np_data.shape[0], data.shape[2]))
+
+            data[i] = np_data
+
+            i += 1
+
+        return data
+
+    def parse_model_name(self, model_name):
+
+        v_instruments_class, v_number_of_instruments, v_total_timesteps, v_train_lookback_period, v_env_lookback_period, v_spread, v_market_name, v_resolution_name, v_online_algorithm_name, v_compute_position_name, v_compute_indicators_name, v_compute_reward_name, v_uuid = model_name.split(
+            DELIMITER)
+
+        if int(v_number_of_instruments) == 7:
+            v_instruments, v_pip_size, v_pip_spread = my_forex_instruments.get_forex_7(int(v_spread))
+        elif int(v_number_of_instruments) == 12:
+            v_instruments, v_pip_size, v_pip_spread = my_forex_instruments.get_forex_12(int(v_spread))
+
+        v_env_lookback_period = int(v_env_lookback_period)
+
+        if v_market_name == 'oanda':
+            v_market = Market.Oanda
+        elif v_market_name == 'fxcm':
+            v_market = Market.FXCM
+
+        if v_resolution_name == 'day':
+            v_resolution = Resolution.Daily
+        elif v_resolution_name == 'hour':
+            v_resolution = Resolution.Hour
+
+        v_online_algorithm = v_online_algorithm_name.split('.')[-1]
+        v_compute_position = v_compute_position_name.split('.')[-1]
+        v_compute_indicators = v_compute_indicators_name.split('.')[-1]
+        v_compute_reward = v_compute_reward_name.split('.')[-1]
+
+        return v_instruments, v_pip_size, v_pip_spread, v_market, v_resolution, v_env_lookback_period, v_online_algorithm, v_compute_position, v_compute_indicators, v_compute_reward
+
+    def get_subdir(self, path):
+
+        for sd in os.scandir(path):
+            if sd.is_dir():
+                subdir = sd.path
+
+        return subdir
+
+
+class QuoteBarData:
+
+    def __init__(self, algorithm, symbol, lookback, history, resolution):
+        self.open = deque(maxlen=lookback)
+        self.high = deque(maxlen=lookback)
+        self.low = deque(maxlen=lookback)
+        self.close = deque(maxlen=lookback)
+        self.Debug = algorithm.Debug
+
+        self.time = algorithm.Time
+
+        if resolution == Resolution.Daily:
+            consolidator = QuoteBarConsolidator(timedelta(days=1))
+        elif resolution == Resolution.Hour:
+            consolidator = QuoteBarConsolidator(timedelta(hours=1))
+        elif resolution == Resolution.Minute:
+            consolidator = QuoteBarConsolidator(timedelta(minutes=1))
+
+        algorithm.SubscriptionManager.AddConsolidator(symbol, consolidator)
+        consolidator.DataConsolidated += self.OnDataConsolidated
+
+        for time, row in history.iterrows():
+            self.time = time
+            self.Update(time, row.open, row.high, row.low, row.close)
+
+    def Update(self, time, o, h, l, c):
+        self.time = time
+        self.open.append(o)
+        self.high.append(h)
+        self.low.append(l)
+        self.close.append(c)
+
+    def OnDataConsolidated(self, sender, bar):
+        self.Update(bar.EndTime, bar.Open, bar.High, bar.Low, bar.Close)

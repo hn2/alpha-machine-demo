@@ -1,0 +1,3 @@
+hannan - dD33dD33
+named pipes
+shared memory

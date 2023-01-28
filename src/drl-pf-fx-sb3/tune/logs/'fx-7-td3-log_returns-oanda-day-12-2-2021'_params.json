@@ -1,0 +1,18 @@
+{
+  "best_params": {
+    "action_noise": "OrnsteinUhlenbeckActionNoise",
+    "batch_size": 256,
+    "buffer_size": 10000,
+    "compute_indicators": "all",
+    "gamma": 0.9999,
+    "learning_rate": 0.000285741,
+    "learning_starts": 10,
+    "lookback": 30,
+    "net_arch": "large",
+    "spread": 2.0,
+    "tau": 0.01,
+    "total_timestamp": 20000.0,
+    "train_freq": 512
+  },
+  "best_value": 33.1529
+}

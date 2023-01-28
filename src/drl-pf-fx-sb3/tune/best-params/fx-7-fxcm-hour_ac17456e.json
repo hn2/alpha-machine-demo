@@ -1,0 +1,17 @@
+{
+  "action_noise": "OrnsteinUhlenbeckActionNoise",
+  "batch_size": 2048,
+  "buffer_size": 1000000,
+  "compute_indicators": "momentum",
+  "gamma": 0.9,
+  "learning_rate": 0.00013259921008801497,
+  "learning_starts": 10,
+  "lookback": 8.0,
+  "net_arch": "xlarge",
+  "reward_penalty": "all",
+  "spread": 5.0,
+  "tau": 0.02,
+  "total_timestamp": 20000.0,
+  "train_freq": 128,
+  "use_sde": 0.0
+}

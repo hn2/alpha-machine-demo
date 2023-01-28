@@ -1,0 +1,54 @@
+C:\Users\hanna\Anaconda3\python.exe C:/alpha-machine/src/drl-pf-fx-sb3/optuna-all.py
+[I 2021-12-11 01:58:06,283] A new study created in RDB with name: fx-ppo-11-12-2021
+v_train_test_split: 0.8
+C:\Users\hanna\Anaconda3\lib\site-packages\stable_baselines3\common\evaluation.py:69: UserWarning:
+
+Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+
+Best trial for PPO:
+  Value:  0.143135
+  Params: 
+['activation_fn', 'tanh', 'batch_size', 256, 'clip_range', 0.3, 'ent_coef', 3.76848e-05, 'gae_lambda', 0.98, 'gamma', 0.999, 'learning_rate', 1e-05, 'max_grad_norm', 0.3, 'n_epochs', 5, 'n_steps', 1024, 'net_arch', 'verybig', 'use_sde', False, 'vf_coef', 0.834824]
+    activation_fn: tanh
+    batch_size: 256
+    clip_range: 0.3
+    ent_coef: 3.76848e-05
+    gae_lambda: 0.98
+    gamma: 0.999
+    learning_rate: 1e-05
+    max_grad_norm: 0.3
+    n_epochs: 5
+    n_steps: 1024
+    net_arch: verybig
+    use_sde: False
+    vf_coef: 0.834824
+  
+Best trial for A2C:
+  Value:  0.247601
+  Params: 
+['activation_fn', 'relu', 'ent_coef', 0.0600525, 'gae_lambda', 0.8, 'gamma', 0.99, 'learning_rate', 1e-05, 'lr_schedule', 'constant', 'max_grad_norm', 1, 'n_steps', 256, 'net_arch', 'verybig', 'normalize_advantage', False, 'ortho_init', True, 'use_rms_prop', False, 'use_sde', False, 'vf_coef', 0.24446]
+    activation_fn: relu
+    ent_coef: 0.0600525
+    gae_lambda: 0.8
+    gamma: 0.99
+    learning_rate: 1e-05
+    lr_schedule: constant
+    max_grad_norm: 1
+    n_steps: 256
+    net_arch: verybig
+    normalize_advantage: False
+    ortho_init: True
+    use_rms_prop: False
+    use_sde: False
+    vf_coef: 0.24446
+  User attrs:
+[I 2021-12-11 08:01:13,905] A new study created in RDB with name: fx-td3-11-12-2021
+v_train_test_split: 0.8
+[I 2021-12-11 08:08:20,595] Trial 0 finished with value: -0.15209712833166122 and parameters: {'gamma': 0.99, 'learning_rate': 1e-05, 'batch_size': 32, 'buffer_size': 100000, 'tau': 0.005, 'train_freq': 4, 'net_arch': 'verybig'}. Best is trial 0 with value: -0.152097.
+v_train_test_split: 0.8
+[I 2021-12-11 08:17:13,052] Trial 1 finished with value: -0.33525632073481876 and parameters: {'gamma': 0.99, 'learning_rate': 1e-05, 'batch_size': 512, 'buffer_size': 100000, 'tau': 0.02, 'train_freq': 256, 'net_arch': 'verybig'}. Best is trial 0 with value: -0.152097.
+v_train_test_split: 0.8
+v_train_test_split: 0.8
+[I 2021-12-11 08:24:25,697] Trial 2 finished with value: -0.22441933831820884 and parameters: {'gamma': 0.995, 'learning_rate': 1e-05, 'batch_size': 32, 'buffer_size': 10000, 'tau': 0.005, 'train_freq': 64, 'net_arch': 'verybig'}. Best is trial 0 with value: -0.152097.
+[I 2021-12-11 08:31:19,447] Trial 3 finished with value: -0.27022781285146874 and parameters: {'gamma': 0.999, 'learning_rate': 1e-05, 'batch_size': 16, 'buffer_size': 100000, 'tau': 0.01, 'train_freq': 256, 'net_arch': 'verybig'}. Best is trial 0 with value: -0.152097.
+v_train_test_split: 0.8

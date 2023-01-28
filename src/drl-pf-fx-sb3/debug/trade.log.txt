@@ -1,0 +1,79 @@
+['EURUSD', 'USDJPY', 'GBPUSD', 'AUDUSD', 'USDCAD', 'USDCHF', 'NZDUSD']
+[0.0001, 0.01, 0.0001, 0.0001, 0.0001, 0.0001, 0.0001]
+[2, 2, 2, 2, 2, 2, 2]
+fxcm
+daily
+30
+td3
+long_and_short
+all
+[log_returns]
+30
+Running model...fx_leverage_20_train_with_callback_with_random_episode_start_noise_ou_-7-110100-1000-30-2-fxcm-daily-on_algo.td3-comp_pos.long_and_short-comp_ind.all-comp_rew.[log_returns]-a707fd8c
+row_count=130, start_row=0, start_date=20210111 22:00, end_row=129, end_date=20210711 21:00
+Action space: Box(-1.0, 1.0, (8,), float16)
+Observation_space: Box(-inf, inf, (1064,), float16)
+Uploading to dropbox...
+Rebalancing fxcm...
+suggested_weights: [-0.12512775  0.12512775 -0.12512775 -0.12512775  0.12512775  0.12512775
+ -0.12512775  0.12410579]
+Start rebalance date and time :2021-07-12 10:00:16
+equity: 611.3985
+Current positions net: [-3  6 -1 -6 -2 -2 -2]
+Target positions: [-1.  2. -1. -2.  2.  2. -2.]
+Trade amount: [ 2. -4.  0.  4.  4.  4.  0.]
+Buy EUR/USD 2.0
+Sell USD/JPY 4.0
+Buy AUD/USD 4.0
+Close short and Buy USD/CAD 2.0
+Close short and Buy USD/CHF 2.0
+End rebalance date and time :2021-07-12 10:01:56
+current_prices: [1.186085, 110.1995, 1.3885049999999999, 0.7464999999999999, 1.2478150000000001, 0.915195, 0.6971]
+current_prices_in_account_currency: [0.1, 0.09074451335986097, 0.1, 0.1, 0.08014008486834986, 0.10926633121902983, 0.1]
+current_pip_value_in_account_currency: [0.1, 0.09074451335986097, 0.1, 0.1, 0.08014008486834986, 0.10926633121902983, 0.1]
+current_margins_per_lot: [59.30425, 50.0, 69.42524999999999, 37.324999999999996, 50.0, 50.0, 34.855000000000004]
+target_positions_prices: [ -64.5     0.69  -55.1  -102.48   61.31   83.59 -109.74]
+target_positions_prices_prices_in_account_currency: [-765.03  843.06 -765.03 -765.03  954.61  700.15 -765.03]
+target_positions_pip_value_in_account_currency: [-765.03  843.06 -765.03 -765.03  954.61  700.15 -765.03]
+target_positions_margins_per_lot: [-1.29  1.53 -1.1  -2.05  1.53  1.53 -2.19]
+Current positions net: [-3  6 -1 -6 -2 -2 -2]
+Target positions: [-1.  2. -1. -2.  2.  2. -2.]
+Trade amount: [ 2. -4.  0.  4.  4.  4.  0.]
+
+['EURUSD', 'USDJPY', 'GBPUSD', 'AUDUSD', 'USDCAD', 'USDCHF', 'NZDUSD']
+[0.0001, 0.01, 0.0001, 0.0001, 0.0001, 0.0001, 0.0001]
+[2, 2, 2, 2, 2, 2, 2]
+fxcm
+daily
+30
+td3
+long_and_short
+all
+[log_returns]
+30
+================
+Running model...fx_leverage_20_train_with_callback_with_random_episode_start_noise_ou_-7-110100-1000-30-2-fxcm-daily-on_algo.td3-comp_pos.long_and_short-comp_ind.all-comp_rew.[log_returns]-a707fd8c
+row_count=130, start_row=0, start_date=20210111 22:00, end_row=129, end_date=20210711 21:00
+Action space: Box(-1.0, 1.0, (8,), float16)
+Observation_space: Box(-inf, inf, (1064,), float16)
+Uploading to dropbox...
+Rebalancing fxcm...
+suggested_weights: [-0.12512794  0.12512794 -0.12512794 -0.12512794  0.12512794  0.12512794
+ -0.12512794  0.1241044 ]
+Start rebalance date and time :2021-07-12 10:05:51
+equity: 607.92656
+Current positions net: [ 3 -6 -1  6  2  2 -2]
+Target positions: [-1.  2. -1. -2.  2.  2. -2.]
+Trade amount: [-4.  8.  0. -8.  0.  0.  0.]
+End rebalance date and time :2021-07-12 10:06:16
+current_prices: [1.1862599999999999, 110.241, 1.388605, 0.746455, 1.2477, 0.91526, 0.6969749999999999]
+current_prices_in_account_currency: [0.1, 0.09071035277256194, 0.1, 0.1, 0.080147471347279, 0.10925857133492123, 0.1]
+current_pip_value_in_account_currency: [0.1, 0.09071035277256194, 0.1, 0.1, 0.080147471347279, 0.10925857133492123, 0.1]
+current_margins_per_lot: [59.31299999999999, 50.0, 69.43025, 37.32275, 50.0, 50.0, 34.848749999999995]
+target_positions_prices: [ -64.12    0.69  -54.78 -101.91   60.97   83.11 -109.14]
+target_positions_prices_prices_in_account_currency: [-760.69  838.59 -760.69 -760.69  949.11  696.23 -760.69]
+target_positions_pip_value_in_account_currency: [-760.69  838.59 -760.69 -760.69  949.11  696.23 -760.69]
+target_positions_margins_per_lot: [-1.28  1.52 -1.1  -2.04  1.52  1.52 -2.18]
+Current positions net: [ 3 -6 -1  6  2  2 -2]
+Target positions: [-1.  2. -1. -2.  2.  2. -2.]
+Trade amount: [-4.  8.  0. -8.  0.  0.  0.]

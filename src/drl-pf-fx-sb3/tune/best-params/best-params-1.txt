@@ -1,0 +1,93 @@
+C:\Users\hanna\Anaconda3\python.exe C:/alpha-machine/src/drl-pf-fx-sb3/optuna-all.py
+[I 2021-12-10 21:15:00,659] Using an existing study with name 'fx-ppo-10-12-2021' instead of creating a new one.
+v_train_test_split: 0.8
+C:\Users\hanna\Anaconda3\lib\site-packages\stable_baselines3\common\evaluation.py:69: UserWarning:
+
+Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+
+[I 2021-12-10 21:15:46,150] Trial 116 pruned. 
+Number of finished trials:  117
+Best trial for PPO:
+  Value:  0.192237
+  Params: 
+['activation_fn', 'tanh', 'batch_size', 128, 'clip_range', 0.1, 'ent_coef', 0.00505853, 'gae_lambda', 0.9, 'gamma', 0.99, 'learning_rate', 1e-05, 'max_grad_norm', 0.9, 'n_epochs', 10, 'n_steps', 2048, 'net_arch', 'verybig', 'use_sde', True, 'vf_coef', 0.367562]
+    activation_fn: tanh
+    batch_size: 128
+    clip_range: 0.1
+    ent_coef: 0.00505853
+    gae_lambda: 0.9
+    gamma: 0.99
+    learning_rate: 1e-05
+    max_grad_norm: 0.9
+    n_epochs: 10
+    n_steps: 2048
+    net_arch: verybig
+    use_sde: True
+    vf_coef: 0.367562
+  User attrs:
+[I 2021-12-10 21:15:46,197] Using an existing study with name 'fx-a2c-10-12-2021' instead of creating a new one.
+v_train_test_split: 0.8
+[I 2021-12-10 21:16:12,643] Trial 110 pruned. 
+Number of finished trials:  111
+Best trial for A2C:
+  Value:  0.535546
+  Params: 
+['activation_fn', 'tanh', 'ent_coef', 0.00225096, 'gae_lambda', 0.95, 'gamma', 0.995, 'learning_rate', 1e-05, 'lr_schedule', 'linear', 'max_grad_norm', 0.3, 'n_steps', 64, 'net_arch', 'verybig', 'normalize_advantage', True, 'ortho_init', True, 'use_rms_prop', False, 'use_sde', False, 'vf_coef', 0.0253355]
+    activation_fn: tanh
+    ent_coef: 0.00225096
+    gae_lambda: 0.95
+    gamma: 0.995
+    learning_rate: 1e-05
+    lr_schedule: linear
+    max_grad_norm: 0.3
+    n_steps: 64
+    net_arch: verybig
+    normalize_advantage: True
+    ortho_init: True
+    use_rms_prop: False
+    use_sde: False
+    vf_coef: 0.0253355
+  User attrs:
+[I 2021-12-10 21:16:12,682] Using an existing study with name 'fx-td3-10-12-2021' instead of creating a new one.
+v_train_test_split: 0.8
+[I 2021-12-10 21:27:58,832] Trial 101 finished with value: 0.08406712301075459 and parameters: {'gamma': 0.999, 'learning_rate': 1e-05, 'batch_size': 2048, 'buffer_size': 1000000, 'tau': 0.001, 'train_freq': 512, 'noise_type': 'ornstein-uhlenbeck', 'noise_std': 0.8517920310684535, 'net_arch': 'verybig'}. Best is trial 4 with value: 0.334131.
+Number of finished trials:  102
+Best trial for TD3:
+  Value:  0.334131
+  Params: 
+['batch_size', 2048, 'buffer_size', 10000, 'gamma', 0.9, 'learning_rate', 1e-05, 'net_arch', 'verybig', 'noise_std', 0.965818, 'noise_type', 'ornstein-uhlenbeck', 'tau', 0.001, 'train_freq', 64]
+    batch_size: 2048
+    buffer_size: 10000
+    gamma: 0.9
+    learning_rate: 1e-05
+    net_arch: verybig
+    noise_std: 0.965818
+    noise_type: ornstein-uhlenbeck
+    tau: 0.001
+    train_freq: 64
+  User attrs:
+[I 2021-12-10 21:27:58,877] Using an existing study with name 'fx-sac-10-12-2021' instead of creating a new one.
+v_train_test_split: 0.8
+[I 2021-12-10 21:35:58,666] Trial 95 pruned. 
+Number of finished trials:  96
+Best trial for SAC:
+  Value:  0.482124
+  Params: 
+['batch_size', 64, 'buffer_size', 1000000, 'gamma', 0.999, 'learning_rate', 1e-05, 'learning_starts', 10000, 'log_std_init', -2.7557, 'net_arch', 'verybig', 'tau', 0.08, 'train_freq', 4, 'use_sde', False, 'use_sde_at_warmup', True]
+    batch_size: 64
+    buffer_size: 1000000
+    gamma: 0.999
+    learning_rate: 1e-05
+    learning_starts: 10000
+    log_std_init: -2.7557
+    net_arch: verybig
+    tau: 0.08
+    train_freq: 4
+    use_sde: False
+    use_sde_at_warmup: True
+  User attrs:
+
+Process finished with exit code 0
+
+
+

@@ -1,0 +1,3 @@
+fx_wk_42_lr_0.00001_b_512_lev_20_w_cb_w_res_ns_none-7-100100-5000-100-2-oanda-daily-on_algo.td3-c_pos.long_and_short-c_ind.all_full-c_rew.[log_returns]-m_rl.True-7cec0fbf
+fx_sb3_week_40_lr_0.00001_b_32_lev_20_w_cb_w_res_noise_none-7-100100-5000-100-2-oanda-daily-on_algo.td3-c_pos.long_and_short-c_ind.all_full-c_rew.[log_returns]-m_rl.True-65e6e27a
+fx_wk.44_lr.0.00001_b.64_ns.none_cb.True_res.True_lev.20-7-100100-5000_0-100-2-oanda-daily-on_algo.ddpg-c_pos.long_and_short-c_ind.all_full-c_rew.log_returns-m_rl.True-2c62f205

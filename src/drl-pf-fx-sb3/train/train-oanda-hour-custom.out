@@ -1,0 +1,216 @@
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:252: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_CLOSE'] = talib.SMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:253: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_HIGH'] = talib.SMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:254: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['SMA_LOW'] = talib.SMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:256: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_CLOSE'] = talib.T3(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:257: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_HIGH'] = talib.T3(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:258: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['T3_LOW'] = talib.T3(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:260: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_CLOSE'] = talib.TEMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:261: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_HIGH'] = talib.TEMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:262: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TEMA_LOW'] = talib.TEMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:264: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_CLOSE'] = talib.TRIMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:265: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_HIGH'] = talib.TRIMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:266: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['TRIMA_LOW'] = talib.TRIMA(self.low_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:268: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_CLOSE'] = talib.WMA(self.close_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:269: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_HIGH'] = talib.WMA(self.high_price)
+e:\alpha-machine\src\findrl\technical_features_full.py:270: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  self.security['WMA_LOW'] = talib.WMA(self.low_price)
+forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+libifcoremd.dll    00007FFBE8913B58  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFC7C845485  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFC7E7554E0  Unknown               Unknown  Unknown
+ntdll.dll          00007FFC7EC0485B  Unknown               Unknown  Unknown
